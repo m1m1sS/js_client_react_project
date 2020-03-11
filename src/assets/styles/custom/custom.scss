@@ -1,0 +1,22 @@
+@import "./components/movies";
+
+
+.home-img {
+    max-width: 100%;
+}
+
+.paragraph {
+    text-align: justify;
+    text-indent: 5%;
+    color: #777;
+}
+
+.remove-list-item {
+    cursor: pointer;
+}
+.favorite-movie {
+    cursor: pointer;
+    &.active {
+        color: theme-color("action");
+    }
+} 
