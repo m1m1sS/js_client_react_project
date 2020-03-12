@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Movies from './pages/Movies';
+import MovieDetails from './pages/MovieDetails';
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import reducers from "./redux/reducers";
@@ -42,16 +43,10 @@ const routes = [
         </Layout>
     },
     {
-        path: '/favorites',
-        exact: false,
-        main: () => <Layout>
-            This is Favorites page.
-        </Layout>
-    },
-    {
         path: '/moviedetails/:id',
         exact: false,
         main: () => <Layout>
+            <MovieDetails/>
         </Layout>
     }
 ]

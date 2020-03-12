@@ -54,15 +54,6 @@ class Header extends Component {
                             Movies
                         </NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink
-                            tag={RRNavLink}
-                            exact 
-                            to="/favorites"
-                            activeClassName="active">
-                            Favorites
-                        </NavLink>
-                    </NavItem>
                 </Nav>
             </Collapse>
             </Container>

@@ -19,3 +19,19 @@
         text-overflow: ellipsis;
     }
 }
+
+.single-movie {
+    .single-movie-image {
+        max-width: 30%;
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+    }
+    .single-movie-description {
+        color: #ff8d2a;
+        border-color: #ffa04d83 !important;
+    }
+    .single-movie-title {
+        color: #ff7700;
+    }
+}

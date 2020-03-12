@@ -31,7 +31,7 @@ class Movie extends Component {
                             <button type="button"
                             onClick={this.showMovieDetails} 
                             className="btn btn-link">
-                                Повече Информация
+                                More information
                             </button>
                         </div> 
                     </div>
