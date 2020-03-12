@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import Movies from './pages/Movies';
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import reducers from "./redux/reducers";
@@ -37,8 +38,7 @@ const routes = [
         path: '/movies',
         exact: false,
         main: () => <Layout>
-            This is Movies page.
-            {/* <ClassComponent/> */}
+            <Movies/>
         </Layout>
     },
     {
@@ -46,15 +46,12 @@ const routes = [
         exact: false,
         main: () => <Layout>
             This is Favorites page.
-            {/* <ClassComponent/> */}
         </Layout>
     },
     {
         path: '/moviedetails/:id',
         exact: false,
         main: () => <Layout>
-            This is Movie Details page.
-            {/* <MovieDetails/> */}
         </Layout>
     }
 ]
