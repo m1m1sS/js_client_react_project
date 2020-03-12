@@ -31,7 +31,7 @@ class MovieDetails extends Component {
                     src={constants.basePosterURL + this.props.movieDetails.poster_path}/>
                     <div className="p-3 d-flex flex-column">
                         <div className="pb-3">
-                            <h2 className="single-movie-title">{this.props.movieDetails.title} <i style={{color: '#ff8d2a'}}>({moment(this.props.movieDetails.release_date).format("YYYY")})</i></h2>
+                            <h2 className="single-movie-title">{this.props.movieDetails.title} <a style={{color: '#ff8d2a'}}>({moment(this.props.movieDetails.release_date).format("YYYY")})</a></h2>
                             <p className="single-movie-description"><i>Release date: {moment(this.props.movieDetails.release_date).format("MMMM Do YYYY")}</i></p>
                             <div className="mt-3 single-movie-description paragraph border-top pt-3">
                                     <h4>Overview</h4>
