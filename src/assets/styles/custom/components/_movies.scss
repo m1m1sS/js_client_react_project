@@ -6,7 +6,7 @@
         }
     }
     .movie-description {
-        color: gray("600");
+        color: #a14b00;
         width: 300px;
         white-space: nowrap;
         overflow: hidden;
@@ -17,6 +17,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: #6b3200;
     }
 }
 
